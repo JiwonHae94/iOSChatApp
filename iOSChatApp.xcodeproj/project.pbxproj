@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		7CA65942277A0A60007EBFAA /* iOSChatAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA65941277A0A60007EBFAA /* iOSChatAppApp.swift */; };
-		7CA65944277A0A60007EBFAA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA65943277A0A60007EBFAA /* ContentView.swift */; };
+		7CA65944277A0A60007EBFAA /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA65943277A0A60007EBFAA /* RootView.swift */; };
 		7CA65946277A0A62007EBFAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CA65945277A0A62007EBFAA /* Assets.xcassets */; };
 		7CA65949277A0A62007EBFAA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CA65948277A0A62007EBFAA /* Preview Assets.xcassets */; };
 		7CA65953277A0A62007EBFAA /* iOSChatAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA65952277A0A62007EBFAA /* iOSChatAppTests.swift */; };
 		7CA6595D277A0A62007EBFAA /* iOSChatAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA6595C277A0A62007EBFAA /* iOSChatAppUITests.swift */; };
 		7CA6595F277A0A62007EBFAA /* iOSChatAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA6595E277A0A62007EBFAA /* iOSChatAppUITestsLaunchTests.swift */; };
+		7CA6597F277A12A9007EBFAA /* LexendDeca-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7CA6597C277A12A9007EBFAA /* LexendDeca-Regular.ttf */; };
+		7CA65980277A12A9007EBFAA /* LexendDeca-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7CA6597D277A12A9007EBFAA /* LexendDeca-SemiBold.ttf */; };
+		7CA65981277A12A9007EBFAA /* LexendDeca-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7CA6597E277A12A9007EBFAA /* LexendDeca-Bold.ttf */; };
+		7CA65983277A13D1007EBFAA /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA65982277A13D1007EBFAA /* Fonts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +40,7 @@
 /* Begin PBXFileReference section */
 		7CA6593E277A0A60007EBFAA /* iOSChatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSChatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CA65941277A0A60007EBFAA /* iOSChatAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSChatAppApp.swift; sourceTree = "<group>"; };
-		7CA65943277A0A60007EBFAA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7CA65943277A0A60007EBFAA /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		7CA65945277A0A62007EBFAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7CA65948277A0A62007EBFAA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7CA6594E277A0A62007EBFAA /* iOSChatAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSChatAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +48,10 @@
 		7CA65958277A0A62007EBFAA /* iOSChatAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSChatAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CA6595C277A0A62007EBFAA /* iOSChatAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSChatAppUITests.swift; sourceTree = "<group>"; };
 		7CA6595E277A0A62007EBFAA /* iOSChatAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSChatAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7CA6597C277A12A9007EBFAA /* LexendDeca-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LexendDeca-Regular.ttf"; sourceTree = "<group>"; };
+		7CA6597D277A12A9007EBFAA /* LexendDeca-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LexendDeca-SemiBold.ttf"; sourceTree = "<group>"; };
+		7CA6597E277A12A9007EBFAA /* LexendDeca-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LexendDeca-Bold.ttf"; sourceTree = "<group>"; };
+		7CA65982277A13D1007EBFAA /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,9 +103,14 @@
 			isa = PBXGroup;
 			children = (
 				7CA65941277A0A60007EBFAA /* iOSChatAppApp.swift */,
-				7CA65943277A0A60007EBFAA /* ContentView.swift */,
-				7CA65945277A0A62007EBFAA /* Assets.xcassets */,
+				7CA6596D277A0D97007EBFAA /* Models */,
 				7CA65947277A0A62007EBFAA /* Preview Content */,
+				7CA6596E277A0D9C007EBFAA /* Services */,
+				7CA6596C277A0D8F007EBFAA /* ViewModels */,
+				7CA6596B277A0D88007EBFAA /* Views */,
+				7CA6596F277A0DA5007EBFAA /* Helpers */,
+				7CA6597B277A126E007EBFAA /* Font */,
+				7CA65945277A0A62007EBFAA /* Assets.xcassets */,
 			);
 			path = iOSChatApp;
 			sourceTree = "<group>";
@@ -125,6 +138,53 @@
 				7CA6595E277A0A62007EBFAA /* iOSChatAppUITestsLaunchTests.swift */,
 			);
 			path = iOSChatAppUITests;
+			sourceTree = "<group>";
+		};
+		7CA6596B277A0D88007EBFAA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7CA65943277A0A60007EBFAA /* RootView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7CA6596C277A0D8F007EBFAA /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		7CA6596D277A0D97007EBFAA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7CA6596E277A0D9C007EBFAA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		7CA6596F277A0DA5007EBFAA /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				7CA65982277A13D1007EBFAA /* Fonts.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		7CA6597B277A126E007EBFAA /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				7CA6597E277A12A9007EBFAA /* LexendDeca-Bold.ttf */,
+				7CA6597C277A12A9007EBFAA /* LexendDeca-Regular.ttf */,
+				7CA6597D277A12A9007EBFAA /* LexendDeca-SemiBold.ttf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,7 +291,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CA65980277A12A9007EBFAA /* LexendDeca-SemiBold.ttf in Resources */,
+				7CA65981277A12A9007EBFAA /* LexendDeca-Bold.ttf in Resources */,
 				7CA65949277A0A62007EBFAA /* Preview Assets.xcassets in Resources */,
+				7CA6597F277A12A9007EBFAA /* LexendDeca-Regular.ttf in Resources */,
 				7CA65946277A0A62007EBFAA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,7 +320,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7CA65944277A0A60007EBFAA /* ContentView.swift in Sources */,
+				7CA65944277A0A60007EBFAA /* RootView.swift in Sources */,
+				7CA65983277A13D1007EBFAA /* Fonts.swift in Sources */,
 				7CA65942277A0A60007EBFAA /* iOSChatAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,6 +486,7 @@
 				DEVELOPMENT_TEAM = E8X42B23QJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = iOSChatApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -451,6 +516,7 @@
 				DEVELOPMENT_TEAM = E8X42B23QJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = iOSChatApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
