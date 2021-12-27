@@ -18,6 +18,14 @@
 		7CA65980277A12A9007EBFAA /* LexendDeca-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7CA6597D277A12A9007EBFAA /* LexendDeca-SemiBold.ttf */; };
 		7CA65981277A12A9007EBFAA /* LexendDeca-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7CA6597E277A12A9007EBFAA /* LexendDeca-Bold.ttf */; };
 		7CA65983277A13D1007EBFAA /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA65982277A13D1007EBFAA /* Fonts.swift */; };
+		7CA65985277A14D6007EBFAA /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA65984277A14D6007EBFAA /* ChatViewModel.swift */; };
+		7CA65988277A14EC007EBFAA /* ContactsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA65987277A14EC007EBFAA /* ContactsViewModel.swift */; };
+		7CA6598A277A14F6007EBFAA /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA65989277A14F6007EBFAA /* AuthViewModel.swift */; };
+		7CA6598C277A1507007EBFAA /* ChatListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA6598B277A1507007EBFAA /* ChatListView.swift */; };
+		7CA6598E277A1513007EBFAA /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA6598D277A1513007EBFAA /* ChatView.swift */; };
+		7CA65990277A1521007EBFAA /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA6598F277A1521007EBFAA /* ContactsView.swift */; };
+		7CA65993277A1599007EBFAA /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA65992277A1599007EBFAA /* CustomTabBar.swift */; };
+		7CA65995277A1A30007EBFAA /* CustomTabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA65994277A1A30007EBFAA /* CustomTabBarButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +60,14 @@
 		7CA6597D277A12A9007EBFAA /* LexendDeca-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LexendDeca-SemiBold.ttf"; sourceTree = "<group>"; };
 		7CA6597E277A12A9007EBFAA /* LexendDeca-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LexendDeca-Bold.ttf"; sourceTree = "<group>"; };
 		7CA65982277A13D1007EBFAA /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		7CA65984277A14D6007EBFAA /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		7CA65987277A14EC007EBFAA /* ContactsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewModel.swift; sourceTree = "<group>"; };
+		7CA65989277A14F6007EBFAA /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		7CA6598B277A1507007EBFAA /* ChatListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListView.swift; sourceTree = "<group>"; };
+		7CA6598D277A1513007EBFAA /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		7CA6598F277A1521007EBFAA /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
+		7CA65992277A1599007EBFAA /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		7CA65994277A1A30007EBFAA /* CustomTabBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,7 +159,11 @@
 		7CA6596B277A0D88007EBFAA /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				7CA65991277A1582007EBFAA /* CustomTabBar */,
 				7CA65943277A0A60007EBFAA /* RootView.swift */,
+				7CA6598B277A1507007EBFAA /* ChatListView.swift */,
+				7CA6598D277A1513007EBFAA /* ChatView.swift */,
+				7CA6598F277A1521007EBFAA /* ContactsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -151,6 +171,9 @@
 		7CA6596C277A0D8F007EBFAA /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				7CA65984277A14D6007EBFAA /* ChatViewModel.swift */,
+				7CA65987277A14EC007EBFAA /* ContactsViewModel.swift */,
+				7CA65989277A14F6007EBFAA /* AuthViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -185,6 +208,15 @@
 				7CA6597D277A12A9007EBFAA /* LexendDeca-SemiBold.ttf */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		7CA65991277A1582007EBFAA /* CustomTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				7CA65992277A1599007EBFAA /* CustomTabBar.swift */,
+				7CA65994277A1A30007EBFAA /* CustomTabBarButton.swift */,
+			);
+			path = CustomTabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,7 +353,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CA65944277A0A60007EBFAA /* RootView.swift in Sources */,
+				7CA65988277A14EC007EBFAA /* ContactsViewModel.swift in Sources */,
+				7CA6598A277A14F6007EBFAA /* AuthViewModel.swift in Sources */,
+				7CA6598C277A1507007EBFAA /* ChatListView.swift in Sources */,
+				7CA6598E277A1513007EBFAA /* ChatView.swift in Sources */,
 				7CA65983277A13D1007EBFAA /* Fonts.swift in Sources */,
+				7CA65993277A1599007EBFAA /* CustomTabBar.swift in Sources */,
+				7CA65995277A1A30007EBFAA /* CustomTabBarButton.swift in Sources */,
+				7CA65990277A1521007EBFAA /* ContactsView.swift in Sources */,
+				7CA65985277A14D6007EBFAA /* ChatViewModel.swift in Sources */,
 				7CA65942277A0A60007EBFAA /* iOSChatAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

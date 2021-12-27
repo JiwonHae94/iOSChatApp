@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  RootView.swift
 //  iOSChatApp
 //
 //  Created by Jiwon_Hae on 2021/12/27.
@@ -8,19 +8,10 @@
 import SwiftUI
 
 struct RootView: View {
-    var body: some View {
-        Text("Hello, world!")
-            .padding()
-            .font(Font.custom("", size:14))
-    }
+    @State var selectedTab : Tabs = .contacts
     
-    init(){
-        for family in UIFont.familyNames {
-            print(family)
-            for fontname in UIFont.fontNames(forFamilyName: family){
-                print("--\(fontname)")
-            }
-        }
+    var body: some View {
+        CustomTabBar(selectedTab: $selectedTab)
     }
 }
 
